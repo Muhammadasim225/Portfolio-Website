@@ -1,0 +1,38 @@
+# Node.js dependencies for both frontend and backend
+node_modules/
+
+# Dependency directories for frontend and backend apps (in case of separate directories)
+portfolio-app/node_modules/
+backend/node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variable files (sensitive information)
+.env
+backend/.env
+frontend/portfolio-app/.env.local
+
+# Vercel build and deployment files
+.vercel/
+
+# Build outputs for both frontend and backend
+dist/
+build/
+
+# OS-specific files (optional)
+.DS_Store
+Thumbs.db
+
+# ESLint cache files (if you're using ESLint)
+.eslintcache
+
+# Optional: Lock files depending on your package manager (if you want to avoid committing these)
+package-lock.json
+yarn.lock
+
+# Miscellaneous (depending on tools you're using)
+.vscode/ # If you're using VSCode and want to ignore workspace-specific settings
+.idea/   # For JetBrains IDEs like WebStorm
