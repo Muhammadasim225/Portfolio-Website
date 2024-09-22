@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import ddd from "../assets/images/d-illustration-man-waving-hand-left-hand-waist-casual-man-saying-hello-say-hi-d-illustration-man-wav-removebg-preview.png"
+import ddd from "../assets/images/ddd.png"
 import AboutMe from './AboutMe'
 import { motion ,AnimatePresence, easeInOut} from "framer-motion"
 import { useRef } from 'react'
