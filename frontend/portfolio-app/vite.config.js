@@ -9,6 +9,6 @@ export default defineConfig({
     emptyOutDir: true
   },
   server: {
-    port: process.env.PORT as unknown as number,
+    port: process.env.PORT,
   },
 })
