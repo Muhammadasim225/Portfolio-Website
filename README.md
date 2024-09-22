@@ -14,10 +14,11 @@ A fully responsive personal portfolio website built using **ReactJS** and **Fram
 
 ## Tech Stack
 
-- **ReactJS**: Front-end JavaScript library for building user interfaces.
+- **ReactJS**: Front-end JavaScript library for building user interfaces with jsx code.
 - **Framer Motion**: For implementing animations and transitions.
-- **HTML5** and **CSS3**: Semantic HTML and modern CSS for layout and styling.
+- **HTML5** and **Tailwind**: Semantic HTML and modern tailwind css properties for styling.
 - **JavaScript (ES6+)**: Modern JavaScript for logic and interactivity.
+- **Nodejs**: For sending and recieving messages,
 
 ## Installation and Setup Instructions
 
