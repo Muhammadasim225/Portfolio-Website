@@ -8,4 +8,7 @@ export default defineConfig({
     outDir: '../dist',
     emptyOutDir: true
   },
+  server: {
+    port: process.env.PORT as unknown as number,
+  },
 })
