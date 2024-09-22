@@ -40,11 +40,11 @@ npm start
 
 # Usage
 
--**Homepage**: Introduction with a hero section featuring a headline and call-to-action buttons.
--**About Me**: Details about my skills, education, and background.
--**Projects**: A section displaying my top projects, each card featuring a brief description and links to the live site or GitHub repository.
--**Experience**: A timeline showcasing my previous work experiences and roles.
--**Contact**: A contact form allowing visitors to reach out directly from the site.
+- **Homepage**: Introduction with a hero section featuring a headline and call-to-action buttons.
+- **About Me**: Details about my skills, education, and background.
+- **Projects**: A section displaying my top projects, each card featuring a brief description and links to the live site or GitHub repository.
+- **Experience**: A timeline showcasing my previous work experiences and roles.
+- **Contact**: A contact form allowing visitors to reach out directly from the site.
 
 
 
