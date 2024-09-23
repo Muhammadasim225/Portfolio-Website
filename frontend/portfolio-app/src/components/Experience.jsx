@@ -8,19 +8,21 @@ const Experience = () => {
   const kale = {
     hide: {
       opacity: 0,
-      y:30
+      y:100
 
     },
     view:{
       opacity: 1,
       y:0,
       transition: {
-        delay: 0.3,
+        delay: 0,
           duration: 2
          
               // Use a number, not a string
       }
     },
+  
+  
   };
 
   return (
@@ -31,11 +33,11 @@ const Experience = () => {
 
       <div className="content my-20 w-full relative z-[0.5px]">
         {/* Vertical timeline line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-[#4d5c8f]"></div>
+       
 
         {/* Experience 1 */}
         <div className="flex items-center w-full mb-8 font-custom">
-          <div className="w-1/2 flex justify-end pr-4 md:pr-8">
+          <div className="w-full flex justify-end pr-4 md:pr-8">
             <div className="bg-[#1b1b1b] p-6 rounded-lg shadow-lg w-full max-w-lg">
               <h3 className="lg:text-2xl sm:text-lg font-bold mb-5 text-md">Web Developer Intern (JULY 2024 - Present)</h3>
               <p className="mt-2 text-gray-400 sm:text-sm text-sm">
@@ -44,19 +46,17 @@ const Experience = () => {
             </div>
           </div>
           {/* Center icon */}
-          <div className="w-10 h-10 bg-[#4d5c8f] rounded-full border-4 border-white flex items-center justify-center">
-            <img src={logAl} alt="UNT Logo" className="w-8 h-8 rounded-full z-10" />
+          <div className="w-12 h-12 bg-[#4d5c8f] rounded-full border-4 border-white flex items-center justify-center">
+            <img src={logAl} alt="UNT Logo" className="w-10 h-10 rounded-full z-10" />
           </div>
-          <div className="w-1/2"></div>
         </div>
 
         {/* Experience 2 */}
         <div className="flex items-center w-full mb-8 font-custom">
-          <div className="w-1/2"></div>
-          <div className="w-10 h-10 bg-[#4d5c8f] rounded-full border-4 border-white flex items-center justify-center">
-            <img src={ariesian} alt="Other Logo" className="w-8 h-8 z-10 rounded-full" />
+          <div className="w-12 h-12 bg-[#4d5c8f] rounded-full border-4 border-white flex items-center justify-center">
+            <img src={ariesian} alt="Other Logo" className="w-10 h-10 z-10 rounded-full" />
           </div>
-          <div className="w-1/2 pl-4 md:pl-8">
+          <div className=" pl-4 md:pl-8">
             <div className="bg-[#1b1b1b] p-6 rounded-lg shadow-lg w-full max-w-lg">
               <h3 className="lg:text-2xl sm:text-lg font-bold mb-5 text-md">Front End Developer (Sep 2024 - Present)</h3>
               <p className="mt-2 text-gray-400 sm:text-sm text-sm">
