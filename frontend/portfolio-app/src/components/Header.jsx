@@ -42,13 +42,17 @@ const Header = () => {
                 {/* Menu Links with Slide Animation for Small Screens */}
                 <AnimatePresence>
                     {isMenuOpen && (
-                        <motion.ul
-                            className="flex flex-col lg:hidden items-center bg-white  text-gray-400 font-bold text-md absolute top-16 left-0 w-full shadow-lg space-y-7 pb-5 "
-                            initial={{ height: 0, opacity: 1 }}
-                            animate={{ height: 'auto', opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 1 }}
-                        >
+                       <motion.ul
+                       className="flex flex-col lg:hidden items-center bg-white text-gray-400 font-bold text-md absolute top-16 left-0 w-full shadow-lg space-y-7 pb-5"
+                       initial={{ y: -100,h:-100, opacity: 0 }}  // Start position higher up
+                       animate={{ y: 0, h:0, opacity: 1 }}    // Animate down to its natural position
+                       exit={{ y: -100,h:-100, opacity: 0 }}     // Animate up and fade out on exit
+                       transition={{
+                         duration: 0.5,                    // Adjust duration for smoother animation
+                         ease: [0.4, 0.8, 0.7, 1]        // Use an ease-in-out cubic-bezier for smoothness
+                       }}
+                     >
+     
                                {isMenuOpen && (
     <li>
         <Link 
