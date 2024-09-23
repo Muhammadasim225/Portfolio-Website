@@ -16,24 +16,24 @@ const Projects = () => {
 
 
   const kk=useRef();
-
   const kale = {
     hide: {
       opacity: 0,
-      y:30
+      y:100
 
     },
     view:{
       opacity: 1,
-   y:0,
+      y:0,
       transition: {
-        delay: 0.3,
-          duration: 2,
+        delay: 0,
+          duration: 2
+         
               // Use a number, not a string
-      },
+      }
     },
- 
-
+  
+  
   };
   const projectsRef = useRef(null);
   const scrollToSection = (refName) => {
