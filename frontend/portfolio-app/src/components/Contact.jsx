@@ -47,24 +47,25 @@ const Contact = () => {
       };
 
     
-  const kale = {
-    hide: {
-      opacity: 0,
-      y:30
-
-    },
-    view:{
-      opacity: 1,
-   y:0,
-      transition: {
-        delay: 0.3,
-          duration: 2,
-              // Use a number, not a string
-      },
-    },
- 
-
-  };
+      const kale = {
+        hide: {
+          opacity: 0,
+          y:100
+    
+        },
+        view:{
+          opacity: 1,
+          y:0,
+          transition: {
+            delay: 0,
+              duration: 2
+             
+                  // Use a number, not a string
+          }
+        },
+      
+      
+      };
 
 
 
