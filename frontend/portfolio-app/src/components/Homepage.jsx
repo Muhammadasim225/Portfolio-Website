@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import profilepic from "../assets/images/profile pic.jpeg"
+import ddd from "../assets/images/ddd.png"
 import AboutMe from './AboutMe'
 import { motion ,AnimatePresence, easeInOut} from "framer-motion"
 import { useRef } from 'react'
