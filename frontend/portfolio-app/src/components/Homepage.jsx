@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import ddd from "../assets/images/ddd.png"
+import profilepic from "../assets/images/profile pic.jpeg"
 import AboutMe from './AboutMe'
 import { motion ,AnimatePresence, easeInOut} from "framer-motion"
 import { useRef } from 'react'
@@ -78,7 +78,7 @@ const vari = {
         </motion.div>
         {/* Adjusted the width to take less space */}
         <div className="second lg:w-3/5 lg:flex lg:justify-center sm:mx-auto sm:w-72 sm:flex sm:absolute lg:relative absolute w-56">
-        <motion.img src={ddd} alt="pic" className='lg:max-w-full lg:h-auto' variants={bacha} initial="hido" whileInView="whiloo" drag/>
+        <motion.img src={profilepic} alt="pic" className='lg:max-w-full lg:h-auto' variants={bacha} initial="hido" whileInView="whiloo" drag/>
         </div>
       </div>
     </>
