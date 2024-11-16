@@ -79,7 +79,7 @@ const vari = {
         </motion.div>
         {/* Adjusted the width to take less space */}
         <div className="second lg:w-3/5 lg:flex lg:justify-center sm:mx-auto sm:w-72 sm:flex sm:absolute lg:relative absolute w-56">
-        <motion.img src={profilepic} alt="pic" className='lg:max-w-full lg:h-auto' variants={bacha} initial="hido" whileInView="whiloo" drag/>
+        <motion.img src={ddd} alt="pic" className='lg:max-w-full lg:h-auto' variants={bacha} initial="hido" whileInView="whiloo" drag/>
         </div>
       </div>
     </>
