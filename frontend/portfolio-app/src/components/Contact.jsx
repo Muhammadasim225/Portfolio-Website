@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faPlane,faArrowTurnDown} from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn,faInstagram, faFacebookF} from '@fortawesome/free-brands-svg-icons';  // Import LinkedIn icon
 import { motion } from 'framer-motion';
+import Swal from 'sweetalert2'
+
 const Contact = () => {
     const redirection=()=>{
         window.location.href = "https://www.linkedin.com/in/muhammad-asim-764a8a273/";
@@ -36,10 +38,34 @@ const Contact = () => {
           });
       
           if (response.ok) {
-            alert("Message sent successfully!");
+            Swal.fire({
+              title: 'Great',
+              text: 'Message Sent Successfully',
+              icon: 'success',
+              confirmButtonText: 'Ok',
+              confirmButtonColor: '#3C9189'
+
+
+            }).then((result) => {
+              if (result.isConfirmed) {
+                // Reset your form fields here
+                document.getElementById('contactForm').reset(); // Replace 'myForm' with your form's ID
+              }
+            });  
           } else {
-            alert("Failed to send message. Try again later.");
+
+              Swal.fire({
+                title: 'Error',
+                text: 'Failed to send nessage',
+                icon: 'error',
+                confirmButtonText: 'Ok',
+                confirmButtonColor: '#3C9189'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  // Reset your form fields here
+                  document.getElementById('contactForm').reset(); // Replace 'myForm' with your form's ID
           }
+              });           }
         } catch (error) {
           console.error(error);
           alert("Error sending message.");

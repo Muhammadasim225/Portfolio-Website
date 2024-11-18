@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import Header from './Header'
-import removebg from '../assets/images/Boy giving thumbs up.png'
+import removebg from '../assets/images/pfp-maker.jpg'
+import secondd from '../assets/images/blurry_background.png'
 import { motion,useMotionValueEvent,useScroll, useTransform  } from 'framer-motion'
 const AboutMe = () => {
     const kale = {
@@ -37,19 +38,19 @@ const AboutMe = () => {
     <>
     <motion.div id="aboutme" ref={aboutMeRef} // Assign reference
   variants={kale} initial="hide" whileInView="view" viewport={{ once: true }} // Ensures animation runs only once
- className="w-full lg:pt-16 sm:pt-16 md:pt-16 lg:pb-0 md:pb-0 sm:pb-0 sm:pl-10 sm:pr-10 pt-6 pb-0 px-14">
+ className="w-full lg:pt-16 sm:pt-16 md:pt-16 lg:pb-0 md:pb-0 sm:pb-0 sm:pl-10 sm:pr-10 pt-6 pb-0 px-8">
 
 
 
-        <div className="head flex flex-col items-center align-middle lg:space-y-3 sm:space-y-3">
+        <div className="space-y-1 head flex flex-col items-center align-middle lg:space-y-3 mb-10 sm:space-y-3">
         <h6 className=' text-orange-500 lg:text-md font-semibold sm:text-sm text-[14px]'>Get To Know more</h6>
         <h1 className='font-extrabold text-black headline lg:text-6xl sm:text-4xl text-3xl'>About Me</h1> 
         </div>
-        <div className="content lg:flex flex flex-col lg:flex-row lg:flex-2 lg:mt-10 md:mt-8 sm:mt-10 sm:flex sm:flex-row lg:min-w-screen ">
-            <div className="first lg:w-2/5 sm:w-2/5 w-full ">
-                <img src={removebg} alt="rmeovebg" />
+        <div className=" content lg:flex flex flex-col lg:flex-row lg:flex-2 lg:mt-10 md:mt-8 sm:mt-10 sm:flex sm:flex-col sm:w-4/3 sm:items-center lg:min-w-screen ">
+            <div className="first lg:w-1/3 sm:w-3/4 w-full lg:ml-8 mb-6 flex sm:items-center justify-center  ">
+                <img src={secondd} alt="rmeovebg" className='rounded-xl md:justify-center sm:items-center w-full ' />
             </div>
-            <div className="second  lg:w-2/5 lg:mb-10  w-full sm:w-3/5 sm:mt-10">
+            <div className=" lg:ml-16 second lg:w-3/5 lg:mr-32 lg:mb-10 px-2 w-full sm:w-5/4 sm:mt-10 sm:mx-10 md:w-4/5">
                 <div className="cont flex  lg:justify-between sm:justify-between justify-items-start flex-col sm:space-x-5 lg:space-x-5 md:space-x-5 sm:flex-row md:flex-row lg:flex-row space-y-4 sm:space-y-0 md:space-y-0 lg:space-y-0">
                     <div className=" fir  w-auto rounded-3xl flex flex-col  ">
                         <h1 className='font-bold text-xl font-custom mb-1 text-orange-500'>Experience</h1>
