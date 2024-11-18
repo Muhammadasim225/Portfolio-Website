@@ -24,15 +24,15 @@ app.post("/send-email", (req, res) => {
     secure: true, // Use SSL
 
     auth: {
-      user: "", // Your Gmail email address
-      pass: "", 
+      user: process.env.EMAIL, // Your Gmail email address
+      pass: process.env.PASSWORD, 
     },
   });
 
   // Mail options
   const mailOptions = {
     from: email,
-    to: "your-gmail-email@gmail.com", // Where you want to receive the emails
+    to: "muhammadasim4927@gmail.com", // Where you want to receive the emails
     subject: `New message from ${name}`,
     text: `You have a new message from:
            Name: ${name}
