@@ -58,11 +58,14 @@ const vari = {
             Hi, I Am Muhammad Asim,
           </motion.h1>
           <motion.h1 variants={vari} initial="initial" animate="anima" className='lg:text-orange-500 text-orange-500 lg:font-extrabold lg:text-5xl sm:text-3xl    sm:text-orange-500 sm: font-extrabold  sm:text-center text-2xl text-center pb-1 lg:text-left '>
-            Expert Web Developer.
+            Full Stack Web Developer.
           </motion.h1>
           <motion.p variants={vari} initial="initial" animate="anima" className='lg:text-gray-500 text-gray-500 lg:font-bold font-bold lg:text-lg sm:text-md  sm:text-center text-[14px] pt-2 text-center lg:text-left sm:text-lg'>
-          A passionate MERN Stack Developer and 3D Artist skilled in building dynamic web applications and realistic 3D models. I specialize in creating user-friendly, scalable solutions that bring ideas to life through cutting-edge technology.
-          </motion.p>
+I craft fast, responsive, and scalable web applications using the MERN stack, Next.js, and modern UI frameworks like Tailwind CSS and shadcn UI. From dynamic admin dashboards to real-time features using WebSockets and WebRTC, I build robust solutions tailored for performance and usability.
+
+I'm also exploring the power of Generative AI, integrating intelligent features into web apps to enhance user experience and automation. Every project I build focuses on clean code, intuitive UX, and real-world scalability.
+
+Let’s collaborate and turn your ideas into impactful digital products.          </motion.p>
           <motion.div variants={vari} initial="initial" animate="anima" className="btns lg:space-x-4 sm:space-x-3 space-x-3 sm:pt-3 pt-8 sm:mx-auto mx-auto lg:mx-0 md:mx-auto text-center lg:text-left flex-nowrap" style={{ flexWrap: 'nowrap' }}
           >
           <a href={cv} download="Muhammad_Asim_CV.pdf">
